@@ -1,13 +1,87 @@
-
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SereneShield — Terms</title>
-<style>body{margin:0;font-family:Inter,system-ui,-apple-system;background:#0e1116;color:#eaf0f7;padding:40px 20px;max-width:860px;margin:0 auto} h1{margin:0 0 12px} p,li{color:#b7c2d4;line-height:1.6}</style>
-</head><body>
-<h1>Terms of Service</h1>
-<p><strong>Subscriptions:</strong> SereneShield Pro is billed monthly or yearly via Stripe and renews automatically unless canceled.</p>
-<p><strong>Cancellations:</strong> You can cancel anytime; access remains through the paid period.</p>
-<p><strong>Refunds:</strong> If something goes wrong, contact support@your-domain and we’ll make it right.</p>
-<p><strong>Scope:</strong> SereneShield modifies page presentation to reduce toxic content. Functionality varies by site layout and may change.</p>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms • SereneShield</title>
+  <meta name="description" content="SereneShield terms of service." />
+
+  <!-- Favicon + mobile icon -->
+  <link rel="icon" href="./logo.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./logo.png" />
+
+  <!-- Social cards -->
+  <meta property="og:title" content="SereneShield — Terms" />
+  <meta property="og:description" content="Client-side serenity for social feeds. Keyword-smart. Zero tracking." />
+  <meta property="og:image" content="https://primalcam.github.io/sereneshield-site/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0e1116" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --bg:#0e1116; --card:#121621; --muted:#9aa4b2; --txt:#eaf0f7; --brand:#5aa7ff; --r:16px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:radial-gradient(1200px 600px at 60% -10%,#192033 0%,#0e1116 55%);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 80px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--txt);text-decoration:none}
+    .logo{width:36px;height:36px;border-radius:10px;object-fit:cover;box-shadow:0 6px 24px rgba(90,167,255,.25)}
+    .title{font-weight:700;letter-spacing:.2px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);backdrop-filter:blur(8px);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .panel{padding:30px}
+    h1{margin:8px 0 14px;font-size:clamp(26px,3.5vw,36px);letter-spacing:-.02em}
+    h2{margin:28px 0 8px;font-size:20px}
+    p,li{color:var(--muted);line-height:1.65}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    .links{margin-top:10px}
+    .links a{color:var(--muted);text-decoration:none;margin:0 8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">
+        <img src="./logo.png" alt="SereneShield" class="logo" />
+        <strong class="title">SereneShield</strong>
+      </a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="./privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="card panel">
+      <h1>Terms of Service</h1>
+      <p><em>Effective date: 2025-10-17</em></p>
+
+      <h2>Use</h2>
+      <p>SereneShield is a browser extension and site that provides client-side content filtering. You may not reverse engineer, resell, or misuse the service in ways that violate applicable laws or platform rules.</p>
+
+      <h2>Subscriptions & refunds</h2>
+      <p>Pro is billed via Stripe as a recurring subscription (monthly or yearly). You can cancel anytime. If something goes wrong, contact support and we’ll make it right.</p>
+
+      <h2>Disclaimer</h2>
+      <p>We cannot guarantee 100% filtering accuracy or continuous availability. The product is provided “as is”.</p>
+
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, SereneShield shall not be liable for indirect or consequential damages arising from use of the product.</p>
+
+      <h2>Changes</h2>
+      <p>We may update these terms; we’ll post the new date above. Continued use indicates acceptance of the updated terms.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:camprimal@gmail.com">camprimal@gmail.com</a></p>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="./privacy.html">Privacy</a> • <a href="./terms.html">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
