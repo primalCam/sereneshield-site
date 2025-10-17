@@ -1,16 +1,98 @@
-
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SereneShield — Privacy</title>
-<style>body{margin:0;font-family:Inter,system-ui,-apple-system;background:#0e1116;color:#eaf0f7;padding:40px 20px;max-width:860px;margin:0 auto} h1{margin:0 0 12px} p,li{color:#b7c2d4;line-height:1.6}</style>
-</head><body>
-<h1>Privacy Policy</h1>
-<p><strong>SereneShield</strong> processes page text locally in your browser to blur or hide toxic content. We do not collect browsing history or transmit page content to our servers.</p>
-<ul>
-  <li><strong>Local data:</strong> your settings (custom keywords, toggles, counts).</li>
-  <li><strong>Payments:</strong> handled by Stripe. Stripe may collect your name, email, and payment details.</li>
-  <li><strong>Emails:</strong> if you submit your email on this site, we use it for receipts, support, and important updates only.</li>
-</ul>
-<p>Contact: support@your-domain</p>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy • SereneShield</title>
+  <meta name="description" content="SereneShield privacy policy. We keep things simple: client-side filtering, no tracking." />
+
+  <!-- Favicon + mobile icon -->
+  <link rel="icon" href="./logo.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./logo.png" />
+
+  <!-- Social cards -->
+  <meta property="og:title" content="SereneShield — Privacy" />
+  <meta property="og:description" content="Client-side serenity for social feeds. Keyword-smart. Zero tracking." />
+  <meta property="og:image" content="https://primalcam.github.io/sereneshield-site/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0e1116" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --bg:#0e1116; --card:#121621; --muted:#9aa4b2; --txt:#eaf0f7; --brand:#5aa7ff; --r:16px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:radial-gradient(1200px 600px at 60% -10%,#192033 0%,#0e1116 55%);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 80px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--txt);text-decoration:none}
+    .logo{width:36px;height:36px;border-radius:10px;object-fit:cover;box-shadow:0 6px 24px rgba(90,167,255,.25)}
+    .title{font-weight:700;letter-spacing:.2px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);backdrop-filter:blur(8px);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .panel{padding:30px}
+    h1{margin:8px 0 14px;font-size:clamp(26px,3.5vw,36px);letter-spacing:-.02em}
+    h2{margin:28px 0 8px;font-size:20px}
+    p,li{color:var(--muted);line-height:1.65}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    .links{margin-top:10px}
+    .links a{color:var(--muted);text-decoration:none;margin:0 8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">
+        <img src="./logo.png" alt="SereneShield" class="logo" />
+        <strong class="title">SereneShield</strong>
+      </a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="./terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main class="card panel">
+      <h1>Privacy Policy</h1>
+      <p><em>Effective date: 2025-10-17</em></p>
+
+      <h2>What we do</h2>
+      <p>SereneShield filters content <strong>client-side</strong> using keyword logic in your browser. We don’t need your social media credentials and we don’t track your browsing.</p>
+
+      <h2>Data we collect</h2>
+      <ul>
+        <li><strong>Payment & receipts:</strong> When you purchase Pro via Stripe, Stripe processes your payment. We receive minimal info necessary for receipts/support (e.g., email, purchase status).</li>
+        <li><strong>Local settings:</strong> Your preferences (e.g., custom keywords, counters) are stored locally in your browser via <code>chrome.storage</code>.</li>
+        <li><strong>Support:</strong> If you email us, we receive the info you send.</li>
+      </ul>
+
+      <h2>What we don’t collect</h2>
+      <ul>
+        <li>No tracking pixels.</li>
+        <li>No personal feed content sent to our servers.</li>
+        <li>No third-party analytics on the extension.</li>
+      </ul>
+
+      <h2>Third parties</h2>
+      <p>Payments are handled by Stripe. Their use of data is governed by their own policy.</p>
+
+      <h2>Data retention</h2>
+      <p>Payment records are retained for accounting/chargeback purposes. Local extension settings remain on your device until you clear them.</p>
+
+      <h2>Your rights</h2>
+      <p>You can request deletion of support records we control. For payment data, contact Stripe or us and we’ll help route the request.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:camprimal@gmail.com">camprimal@gmail.com</a></p>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="./privacy.html">Privacy</a> • <a href="./terms.html">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
