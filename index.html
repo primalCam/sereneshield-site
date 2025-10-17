@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SereneShield Pro — Your feed. Your peace.</title>
   <meta name="description" content="Upgrade to SereneShield Pro to shield toxic posts across X, Reddit, YouTube, Instagram, Facebook, and TikTok — client-side, zero tracking, keyword-smart." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon / social (uses the uploaded logo.png in the repo root) -->
+  <link rel="icon" href="./logo.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="./logo.png" />
+  <meta property="og:title" content="SereneShield Pro" />
+  <meta property="og:description" content="Client-side serenity for social feeds. Keyword-smart. Zero tracking." />
+  <meta property="og:image" content="https://primalcam.github.io/sereneshield-site/logo.png" />
+  <meta name="theme-color" content="#0e1116" />
+
   <style>
     :root { --bg:#0e1116; --card:#121621; --muted:#9aa4b2; --txt:#eaf0f7; --brand:#5aa7ff; --brand2:#b8e1ff; --ok:#4caf50; --r:16px; }
     *{box-sizing:border-box}
@@ -14,7 +25,8 @@
     .wrap{max-width:980px;margin:0 auto;padding:48px 20px 80px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px;color:var(--txt);text-decoration:none}
-    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 6px 24px rgba(90,167,255,.35)}
+    .logo{width:36px;height:36px;border-radius:10px;object-fit:cover;box-shadow:0 6px 24px rgba(90,167,255,.25)}
+    .title{font-weight:700;letter-spacing:.2px}
     .badge{font-size:12px;color:#0b1220;background:#fff;padding:6px 10px;border-radius:999px}
     .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:28px}
     @media (max-width:880px){.hero{grid-template-columns:1fr}}
@@ -44,9 +56,10 @@
 <body>
   <div class="wrap">
     <header>
-      <a class="brand" href="/">
-        <div class="logo" aria-hidden="true"></div>
-        <strong>SereneShield</strong>
+      <a class="brand" href="./">
+        <!-- 👇 This reads ./logo.png that you uploaded -->
+        <img src="./logo.png" alt="SereneShield" class="logo" />
+        <strong class="title">SereneShield</strong>
       </a>
       <span class="badge">Pro</span>
     </header>
@@ -62,7 +75,6 @@
           <li>Apple-grade blur & micro-animations</li>
         </ul>
 
-        <!-- Email capture (optional). Replace with your Formspree/Buttondown endpoint if you want. -->
         <form class="email" action="https://formspree.io/f/your_form_id" method="POST">
           <input type="email" name="email" placeholder="Your email (for receipts & updates)" />
           <button class="button secondary" type="submit">Notify me</button>
@@ -70,7 +82,7 @@
         <div class="hint">No spam. We only send receipts & important updates.</div>
 
         <div class="cta">
-          <!-- 🔗 Replace both hrefs with your real Stripe Payment Links -->
+          <!-- 🔗 Replace with your live Stripe Payment Links -->
           <a class="button" href="https://REPLACE_WITH_MONTHLY_LINK">Get Pro — $7.99/mo</a>
           <a class="button secondary" href="https://REPLACE_WITH_YEARLY_LINK">Get Pro — $59/yr</a>
         </div>
@@ -89,10 +101,9 @@
     <footer>
       <div>Payments handled securely by Stripe. Email is collected for receipts & support.</div>
       <div class="links">
-        <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a> • <a href="./terms.html">Terms</a>
       </div>
     </footer>
   </div>
 </body>
 </html>
-
