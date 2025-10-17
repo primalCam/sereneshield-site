@@ -1,1 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SereneShield Pro — Your feed. Your peace.</title>
+  <meta name="description" content="Upgrade to SereneShield Pro to shield toxic posts across X, Reddit, YouTube, Instagram, Facebook, and TikTok — client-side, zero tracking, keyword-smart." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0e1116; --card:#121621; --muted:#9aa4b2; --txt:#eaf0f7; --brand:#5aa7ff; --brand2:#b8e1ff; --ok:#4caf50; --r:16px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:radial-gradient(1200px 600px at 60% -10%,#192033 0%,#0e1116 55%);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 80px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--txt);text-decoration:none}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 6px 24px rgba(90,167,255,.35)}
+    .badge{font-size:12px;color:#0b1220;background:#fff;padding:6px 10px;border-radius:999px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:28px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);backdrop-filter:blur(8px);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .panel{padding:30px}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0 0 10px;letter-spacing:-.02em}
+    p.lead{color:var(--muted);margin:6px 0 18px;font-size:16px}
+    ul.points{margin:14px 0 0;padding:0;list-style:none;color:var(--muted)}
+    ul.points li{margin:8px 0;padding-left:24px;position:relative}
+    ul.points li:before{content:"✓";color:var(--ok);position:absolute;left:0;top:0;transform:translateY(2px);font-weight:700}
+    .cta{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    a.button{display:inline-block;text-decoration:none;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0b1220;font-weight:700;padding:14px 18px;border-radius:12px;transition:transform .08s ease,box-shadow .2s ease;box-shadow:0 10px 30px rgba(90,167,255,.35)}
+    a.button.secondary{background:#1a2132;color:var(--txt);border:1px solid rgba(255,255,255,.08);box-shadow:none}
+    a.button:hover{transform:translateY(-1px)}
+    .shot{min-height:340px;display:grid;place-items:center;overflow:hidden}
+    .fake-feed{width:100%;height:100%;border-radius:12px;background:#0f1420;border:1px solid rgba(255,255,255,.05);position:relative;padding:20px;color:var(--muted)}
+    .blurred{filter:blur(4px) opacity(.5);pointer-events:none;border-radius:8px;padding:14px;background:rgba(200,200,255,.06);margin-bottom:12px}
+    .tag{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:#182034;border:1px solid rgba(255,255,255,.08);font-size:12px;color:#b7c2d4}
+    form.email{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+    input[type=email]{flex:1 1 260px;background:#0d1422;color:var(--txt);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px}
+    .hint{font-size:12px;color:var(--muted);margin-top:6px}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    .links{margin-top:10px;text-align:center}
+    .links a{color:var(--muted);text-decoration:none;margin:0 8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true"></div>
+        <strong>SereneShield</strong>
+      </a>
+      <span class="badge">Pro</span>
+    </header>
+
+    <section class="hero">
+      <div class="card panel">
+        <h1>Your feed. Your peace.</h1>
+        <p class="lead">Upgrade to <strong>SereneShield Pro</strong> to shield toxic posts across <em>X, Reddit, YouTube, Instagram, Facebook, and TikTok</em> — client-side, zero tracking, keyword-smart.</p>
+        <ul class="points">
+          <li>Multi-platform filtering</li>
+          <li>Custom keyword packs + presets</li>
+          <li>Reveal/whitelist with daily serenity stats</li>
+          <li>Apple-grade blur & micro-animations</li>
+        </ul>
+
+        <!-- Email capture (optional). Replace with your Formspree/Buttondown endpoint if you want. -->
+        <form class="email" action="https://formspree.io/f/your_form_id" method="POST">
+          <input type="email" name="email" placeholder="Your email (for receipts & updates)" />
+          <button class="button secondary" type="submit">Notify me</button>
+        </form>
+        <div class="hint">No spam. We only send receipts & important updates.</div>
+
+        <div class="cta">
+          <!-- 🔗 Replace both hrefs with your real Stripe Payment Links -->
+          <a class="button" href="https://REPLACE_WITH_MONTHLY_LINK">Get Pro — $7.99/mo</a>
+          <a class="button secondary" href="https://REPLACE_WITH_YEARLY_LINK">Get Pro — $59/yr</a>
+        </div>
+      </div>
+
+      <div class="card shot">
+        <div class="fake-feed">
+          <div class="blurred">Blocked: “You are worthless…” <span class="tag">🛡️ serene</span></div>
+          <div>Healthy post — “Shipping a plant pack for #RobloxDev 🌿”</div>
+          <div class="blurred">Blocked rage-bait: “Everyone thinks you…” <span class="tag">🛡️ serene</span></div>
+          <div>“Your feed is yours again.”</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Payments handled securely by Stripe. Email is collected for receipts & support.</div>
+      <div class="links">
+        <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
 
